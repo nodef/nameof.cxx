@@ -1,28 +1,28 @@
 {
-  "name": "taskflow.cxx",
-  "version": "4.2026.5",
-  "description": "A General-purpose Task-parallel Programming System using Modern C++; Tsung-Wei Huang (2018).",
+  "name": "nameof.cxx",
+  "version": "0.10.4",
+  "description": "Nameof operator for modern C++, simply obtain the name of a variable, type, function, macro, and enum; Daniil Goncharov (2016).",
   "keywords": [
     "c++",
     "library",
-    "taskflow",
-    "parallel",
-    "concurrency",
-    "multithreading",
-    "task graph",
-    "thread pool"
+    "nameof",
+    "macro",
+    "variable",
+    "type",
+    "function",
+    "enum"
   ],
-  "homepage": "https://github.com/nodef/taskflow.cxx#readme",
+  "homepage": "https://github.com/nodef/nameof.cxx#readme",
   "bugs": {
-    "url": "https://github.com/nodef/taskflow.cxx/issues"
+    "url": "https://github.com/nodef/nameof.cxx/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nodef/taskflow.cxx.git"
+    "url": "git+https://github.com/nodef/nameof.cxx.git"
   },
   "license": "MIT",
   "author": "wolfram77@gmail.com",
-  "main": "taskflow.hpp",
+  "main": "nameof.hpp",
   "scripts": {
     "test": "bash build.sh test"
   }
