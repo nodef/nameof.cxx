@@ -13,11 +13,11 @@ If you like this project, please consider donating to one of the funds that help
 
 ## Documentation
 
-* [Reference](doc/reference.md)
-* [Limitations](doc/limitations.md)
-* [Integration](#Integration)
+* [Reference](https://github.com/Neargye/nameof/blob/master/doc/reference.md)
+* [Limitations](https://github.com/Neargye/nameof/blob/master/doc/limitations.md)
+* [Installation](#Installation)
 
-## [Features & Examples](example/example.cpp)
+## [Features & Examples](https://github.com/Neargye/nameof/blob/master/example/example.cpp)
 
 * Nameof
 
@@ -116,11 +116,42 @@ If you like this project, please consider donating to one of the funds that help
 
 ## Remarks
 
-* Before use, read the [limitations](doc/limitations.md) of functionality.
+* Before use, read the [limitations](https://github.com/Neargye/nameof/blob/master/doc/limitations.md) of functionality.
 
 ## Integration
 
-You should add required file [nameof.hpp](include/nameof.hpp).
+Run:
+
+```bash
+$ npm i nameof.cxx
+```
+
+And then include `nameof.hpp` as follows:
+
+```cxx
+// main.cxx
+#include <nameof.hpp>
+
+int main() { /* ... */ }
+```
+
+Finally, compile while adding the path `node_modules/nameof.cxx` to your compiler's include paths.
+
+```bash
+$ clang++ -std=c++20 -I./node_modules/nameof.cxx main.cxx  # or, use g++
+$ g++     -std=c++20 -I./node_modules/nameof.cxx main.cxx
+```
+
+You may also use a simpler approach with the [cpoach](https://www.npmjs.com/package/cpoach.sh) tool, which automatically adds the necessary include paths of all the installed dependencies for your project.
+
+```bash
+$ cpoach clang++ -std=c++20 main.cxx  # or, use g++
+$ cpoach g++     -std=c++20 main.cxx
+```
+
+---
+
+Alternatively, you should add required file [nameof.hpp](nameof.hpp).
 
 If you are using [vcpkg](https://github.com/Microsoft/vcpkg/) on your project for external dependencies, then you can use the [nameof package](https://github.com/microsoft/vcpkg/tree/master/ports/nameof).
 
@@ -140,6 +171,15 @@ CPMAddPackage(
 
 ## Compiler compatibility
 
-Check in the [reference](doc/reference.md) for each features.
+Check in the [reference](https://github.com/Neargye/nameof/blob/master/doc/reference.md) for each features.
 
 ## Licensed under the [MIT License](LICENSE)
+
+<br>
+<br>
+
+
+[![](https://raw.githubusercontent.com/qb40/designs/gh-pages/0/image/11.png)](https://wolfram77.github.io)<br>
+[![SRC](https://img.shields.io/badge/src-repo-green?logo=Org)](https://github.com/Neargye/nameof)
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/nameof.cxx)
