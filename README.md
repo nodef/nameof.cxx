@@ -118,7 +118,7 @@ If you like this project, please consider donating to one of the funds that help
 
 * Before use, read the [limitations](https://github.com/Neargye/nameof/blob/master/doc/limitations.md) of functionality.
 
-## Integration
+## Installation
 
 Run:
 
@@ -138,15 +138,15 @@ int main() { /* ... */ }
 Finally, compile while adding the path `node_modules/nameof.cxx` to your compiler's include paths.
 
 ```bash
-$ clang++ -std=c++20 -I./node_modules/nameof.cxx main.cxx  # or, use g++
-$ g++     -std=c++20 -I./node_modules/nameof.cxx main.cxx
+$ clang++ -std=c++17 -I./node_modules/nameof.cxx main.cxx  # or, use g++
+$ g++     -std=c++17 -I./node_modules/nameof.cxx main.cxx
 ```
 
 You may also use a simpler approach with the [cpoach](https://www.npmjs.com/package/cpoach.sh) tool, which automatically adds the necessary include paths of all the installed dependencies for your project.
 
 ```bash
-$ cpoach clang++ -std=c++20 main.cxx  # or, use g++
-$ cpoach g++     -std=c++20 main.cxx
+$ cpoach clang++ -std=c++17 main.cxx  # or, use g++
+$ cpoach g++     -std=c++17 main.cxx
 ```
 
 ---

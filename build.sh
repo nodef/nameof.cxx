@@ -16,10 +16,10 @@ fi
 
 # Test the project
 test() {
-echo "Running 01-basic.cxx ..."
-clang++ -std=c++17 -I. -o 01.exe examples/01-basic.cxx && ./01.exe && echo -e "\n"
-echo "Running 02-range.cxx ..."
-clang++ -std=c++17 -I. -o 02.exe examples/02-range.cxx && ./02.exe && echo -e "\n"
+echo "Running 01-simple.cxx ..."
+clang++ -std=c++17 -I. -o 01.exe examples/01-simple.cxx      && ./01.exe && echo -e "\n"
+echo "Running 02-custom_name.cxx ..."
+clang++ -std=c++17 -I. -o 02.exe examples/02-custom_name.cxx && ./02.exe && echo -e "\n"
 }
 
 

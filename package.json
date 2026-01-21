@@ -1,6 +1,6 @@
 {
   "name": "nameof.cxx",
-  "version": "0.10.4",
+  "version": "0.10.5",
   "description": "Nameof operator for modern C++, simply obtain the name of a variable, type, function, macro, and enum; Daniil Goncharov (2016).",
   "keywords": [
     "c++",
